@@ -54,7 +54,7 @@ public class Solution {
 
     private Collection<Object> currentCollection;
     private TestingStrategy currentStrategy;
-    public static int testTimesForCalculateAverageTime = 20; //Количество тестов для бОльшей точности
+    public static int testTimesForCalculateAverageTime = 100; //Количество тестов для бОльшей точности
     public static int testingFirstCycle = 100;   // Количество операций первого теста
     public static int testingSecondCycle = 500;  // Количество операций второго теста
     public static int testingThirdCycle = 10000; // Количество операций третьего теста
@@ -87,7 +87,7 @@ public class Solution {
         currentCollection = new TreeSet<>((o1, o2) -> o1.hashCode()-o2.hashCode());
         testSet();
 
-        Util.saveResultsToFile("D:\\test result.txt");
+        Util.saveResultsToFile("Z:\\test result.txt");
     }
 
 
